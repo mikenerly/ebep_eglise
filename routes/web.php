@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\AnnouncementController;
+
 use Illuminate\Support\Facades\Route;
+use App\Models\Announcement;
+use App\Http\Controllers\SermonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +26,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //define resourceful route for announcement feature
-//Route::resource('announcements', 'AnnouncementController');
+Route::resource('announcements', AnnouncementController::class);
+
+Route::resource('sermons', SermonController::class);
+
 
 
 //Route::get('/announcements', 'AnnouncementController@index')->name('index');
