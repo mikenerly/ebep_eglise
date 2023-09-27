@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<meta name="csrf-token" content="1GCfeHEeDFwWvdGDI5meGYYN2gv5ZycghtdS6Qov">-->
+        <meta name="csrf-token" content="1GCfeHEeDFwWvdGDI5meGYYN2gv5ZycghtdS6Qov">
         
         <title>LennHt - Welcome to LennHt</title>  
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
@@ -12,16 +12,25 @@
     </head>
 
     <body>
+        <div class="preloader">
+            <button class="as-btn style3 preloaderCls">Cancel Preloader</button>
+            <div class="preloader-inner"><span class="loader"></span></div>
+        </div>
+        <div class="popup-search-box d-none d-lg-block">
+            <button class="searchClose"><i class="fas fa-times"></i></button>
+            <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i class="fas fa-search"></i></button></form>
+        </div>
         <div class="as-menu-wrapper">
             <div class="as-menu-area text-center">
                 <button class="as-menu-toggle"><i class="fas fa-times"></i></button>
-                <div class="mobile-logo"><a href="#"><img src="#" style="width:250px;"  alt="EBEP Eglise"></a></div>
+                <div class="mobile-logo"><a href="https://lennht.com"><img src="https://lennht.com/assets/images/logo.webp" style="width:250px;"  alt="LennHt"></a></div>
                 <div class="as-mobile-menu">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">EBEP</a></li>
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">MEDIA CHANNEL</a></li>
+                        <li><a href="https://lennht.com">Home</a></li>
+                        <li><a href="https://lennht.com/programs">Programs</a></li>
+                        <li><a href="https://lennht.com/courses">Courses</a></li>
+                        <li><a href="https://lennht.com/about">About Us</a></li>
+                        <li><a href="https://lennht.com/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,9 +43,24 @@
                             <div class="col-auto d-none d-lg-block">
                                 <div class="header-links">
                                     <ul>
-                                        <li><i class="fas fa-envelope"></i><b></b><a href="#">#569, Route de Delmas ( entre Delmas 91 et 93), Delmas, Haiti </a></li>
-                                        <li><i class=" "></i><b></b><a href="#">A Propos </a></li>
-                                        <li><i class=" "></i><b></b><a href="#">Contactez Nous</a></li>
+                                        <li><i class="fas fa-envelope"></i><b>Email Us: </b><a href="mailto:contact.info@lennht.com">contact.info@lennht.com</a></li>
+                                        <li><i class="fas fa-phone"></i><b>Hotline: </b><a href="tel:+16892567370">+1 (689) 256-7370</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header-links">
+                                    <ul>
+                                        <li>
+                                            <div class="header-social">
+                                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                        </li>
+                                        <li><i class="fas fa-user"></i><a href="https://lennht.com/login">Login</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -53,7 +77,17 @@
                                 <div class="col-auto">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                            <div class="header-logo"><a href="#"><img src="# class="img-responsive" style="width:250px;" alt="LennHt"></a></div>
+                                            <div class="header-logo"><a href="https://lennht.com"><img src="https://lennht.com/assets/images/main-logo.webp" class="img-responsive" style="width:250px;" alt="LennHt"></a></div>
+                                        </div>
+                                        <div class="col-auto d-none d-xl-inline-block">
+                                            <div class="category-menu-wrap">
+                                                <a class="menu-expand" href="javascript:void(0)"><i class="fa-solid fa-list"></i>Categories</a>
+                                                <nav class="category-menu">
+                                                    <ul>
+                                                        <li><a href="https://lennht.com/categories/programming">Programming</a></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -63,20 +97,50 @@
                                             <nav class="main-menu d-none d-lg-inline-block">
                                                 <ul>
                                                     <li class="active">
-                                                        <a href="#">Home</a>
+                                                        <a href="https://lennht.com">Home</a>
                                                     </li>
                                                     <li class="menu-item-has-children mega-menu-wrap">
-                                                        <a href="#">EBEP</a>
+                                                        <a href="javascript:void(0)">Programs</a>
+                                                        <ul class="mega-menu">
+                                                            <li class="d-flex justify-content-center flex-column">
+                                                                <div class="">
+                                                                    <div class="d-flex">
+                                                                        <img src="https://lennht.com/storage/assets/images/programs/full-stack-web-development-v1/YEvyR8ATEtBOIoxP9ksSGRsVV5cBrigWaWkSJSuX.png" alt="" class="img-thumbnail me-2 rounded-circle" style="width: 50px; height: 50px;">
+                                                                        <div>
+                                                                            <strong class="fa-2x text-sec">Full-Stack Web Development V1</strong>
+                                                                            <p>
+                                                                                Full-Stack Web Development with Ruby on Rails as the backend language encompasses end-to-end creation of dynamic and robust web applications. It involves using Ruby on Rails, a powerful and efficient framework, to build server-side functionalities, and integrating front-end technologies to craft seamless user experiences.
+                                                                            </p>
+
+                                                                            <div class="btn-group">
+                                                                                <a href="https://lennht.com/programs/full-stack-web-development-v1" class="primary-btn style4">Learn More</a>
+                                                                                <a href="https://lennht.com/programs-enrollment?program=full-stack-web-development-v1" class="primary-btn text-white">ApplyNow<i class="fas fa-long-arrow-right ms-2"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                     <li>
-                                                        <a href="#">EVENTS</a>
-                                                    </li>  
-                                                    <li>
-                                                        <a href="#">MEDIA CHANNEL</a>
+                                                        <a href="https://lennht.com/courses">Courses</a>
                                                     </li>
+                                                    <!-- <li>
+                                                        <a href="#">Blog</a>
+                                                    </li> -->
+                                                    <li>
+                                                        <a href="https://lennht.com/about">About Us</a>
+                                                    </li>
+                                                    <li><a href="https://lennht.com/contact">Contact</a></li>
                                                 </ul>
                                             </nav>
-                                            <!--<button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i class="fas fa-bars"></i></button>-->
+                                            <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i class="fas fa-bars"></i></button>
+                                        </div>
+                                        <div class="col-auto d-none d-xxl-block">
+                                            <div class="header-button">
+                                                <button type="button" class="icon-btn searchBoxToggler"><i class="fas fa-search"></i></button>
+                                                <a href="https://lennht.com/get-started" class="as-btn ml-25">Get Staerted<i class="fas fa-arrow-right ms-2"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -102,21 +166,29 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(148, 37, 37, 0.7); /* Here, '0.5' is the opacity value (0.0 to 1.0) */
+                background-color: rgba(255, 255, 255, 0.7); /* Here, '0.5' is the opacity value (0.0 to 1.0) */
             }
         </style>
 
         <div class="as-hero-wrapper hero-4" data-bg-src="assets/images/home.webp" style="position: relative;">
             <div class="container z-index-common">
                 <div class="hero-style4">
-                    <!--<span class="hero-subtitle">More Than 3+ Students</span>-->
-                    <p>Bienvenue a</p>
-                    <div class="hero-shape shape2"><img src="https://lennht.com/favicon/apple-touch-icon.png" alt="shape"></div>
-                    <h1 class="hero-title">Eglise<br>Baptiste<br>Evangelique de<br>Petion-Ville</h1>
+                    <span class="hero-subtitle">More Than 3+ Students</span>
+                    <h1 class="hero-title">Acquire The<br>Necessary Skills<br>For Success</h1>
+                    <div class="checklist">
+                        <ul>
+                            <li>1 Program</li>
+                            <li>6+ Courses</li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://lennht.com/get-started" class="as-btn">Get Started<i class="fas fa-long-arrow-right ms-2"></i></a>
+                        <a href="https://lennht.com/programs" class="as-btn style4">Our Program<i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
             </div>
-            <!--<div class="hero-shape shape1"><img src="https://lennht.com/assets/new/images/shape_4_1.png" alt="shape"></div>
-            <div class="hero-shape shape2"><img src="https://lennht.com/favicon/apple-touch-icon.png" alt="shape"></div>-->
+            <div class="hero-shape shape1"><img src="https://lennht.com/assets/new/images/shape_4_1.png" alt="shape"></div>
+            <div class="hero-shape shape2"><img src="https://lennht.com/favicon/apple-touch-icon.png" alt="shape"></div>
         </div>
         <div class="space">
             <div class="container">
