@@ -1,0 +1,96 @@
+.header-top {
+    background-color: #283e4a!important;
+}
+#wrapper {
+    box-sizing: border-box;
+}
+#wrapper {
+    background: rgba(239, 219, 220, 0.31);
+    padding: 10px;
+    width: 1440px;
+    height: 3118px;
+    position: relative;
+    overflow-y: auto;
+}
+
+#menu-item-1 {
+    color: var(--menu-color, #fefefe);
+     text-align: right;
+     font: 400 16px 'Saira Condensed', sans-serif;
+     position: relative;
+}
+
+.header-top {
+    box-sizing: border-box;
+    }
+
+.header-top {
+    background: rgba(92, 37, 37, 0.78);
+    width: 1440px;
+    height: 50px;
+    position: relative;
+    }
+
+    .a-propos-and-contact, .a-propos-and-contact * {
+        box-sizing: border-box;
+        }
+        .a-propos-and-contact {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        position: relative;
+        }
+        .a-propos {
+        color: #ffffff;
+        text-align: left;
+        font: 600 16px 'Saira Condensed', sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        }
+        .line-1 {
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 1px 0 0 0;
+        flex-shrink: 0;
+        width: 24px;
+        height: 0px;
+        position: relative;
+        transform-origin: 0 0;
+        transform: rotate(90deg) scale(1, 1);
+        }
+        .contactez-nous {
+        color: #ffffff;
+        text-align: left;
+        font: 600 16px 'Saira Condensed', sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        }
+
+        .adresse, .adresse * {
+            box-sizing: border-box;
+            }
+       .adresse {
+           display: flex;
+            flex-direction: row;
+            gap: 0px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+           }
+       
+        .frame {
+           flex-shrink: 0;
+            position: relative;
+            overflow: visible;
+           }
+       
+        ._569-route-de-delmas-entre-delmas-91-et-93-delmas-haiti {
+           color: var(--menu-color, #fefefe);
+            text-align: right;
+            font: 600 16px 'Saira Condensed', sans-serif;
+            position: relative;
+           }
+       
+       
