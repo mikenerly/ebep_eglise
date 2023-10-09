@@ -1,96 +1,48 @@
-.header-top {
-    background-color: #283e4a!important;
-}
-#wrapper {
-    box-sizing: border-box;
-}
-#wrapper {
-    background: rgba(239, 219, 220, 0.31);
-    padding: 10px;
-    width: 1440px;
-    height: 3118px;
-    position: relative;
-    overflow-y: auto;
+#top-bar {
+    background-color: #333; /* Background color for the entire row */
+    color: #fff; /* Text color */
+    /*padding: 5px 0; /* Add some padding for spacing */
+    padding-top: 7px;
+    padding-bottom: 5px;
+
+    position: absolute; /* Position absolute to stay at the top */
+    width: 100%; /* Take the entire width */
+    top: 0; /* Positioned at the top of the screen */
+    z-index: 1000; /* Set a higher z-index to ensure it's above other elements */
 }
 
-#menu-item-1 {
-    color: var(--menu-color, #fefefe);
-     text-align: right;
-     font: 400 16px 'Saira Condensed', sans-serif;
-     position: relative;
+.navbar{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
 }
 
-.header-top {
-    box-sizing: border-box;
-    }
+#navbarNav{
+    display: flex;
+    justify-content: flex-end;
+}
 
-.header-top {
-    background: rgba(92, 37, 37, 0.78);
-    width: 1440px;
-    height: 50px;
-    position: relative;
-    }
+.menu-item-1{
+    list-style: none;
+}
 
-    .a-propos-and-contact, .a-propos-and-contact * {
-        box-sizing: border-box;
-        }
-        .a-propos-and-contact {
-        display: flex;
-        flex-direction: row;
-        gap: 9px;
-        align-items: flex-end;
-        justify-content: flex-start;
-        position: relative;
-        }
-        .a-propos {
-        color: #ffffff;
-        text-align: left;
-        font: 600 16px 'Saira Condensed', sans-serif;
-        text-transform: uppercase;
-        position: relative;
-        }
-        .line-1 {
-        border-style: solid;
-        border-color: #ffffff;
-        border-width: 1px 0 0 0;
-        flex-shrink: 0;
-        width: 24px;
-        height: 0px;
-        position: relative;
-        transform-origin: 0 0;
-        transform: rotate(90deg) scale(1, 1);
-        }
-        .contactez-nous {
-        color: #ffffff;
-        text-align: left;
-        font: 600 16px 'Saira Condensed', sans-serif;
-        text-transform: uppercase;
-        position: relative;
-        }
+.menu-item-2 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    /*align-items: flex-end;*/
+}
 
-        .adresse, .adresse * {
-            box-sizing: border-box;
-            }
-       .adresse {
-           display: flex;
-            flex-direction: row;
-            gap: 0px;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-           }
-       
-        .frame {
-           flex-shrink: 0;
-            position: relative;
-            overflow: visible;
-           }
-       
-        ._569-route-de-delmas-entre-delmas-91-et-93-delmas-haiti {
-           color: var(--menu-color, #fefefe);
-            text-align: right;
-            font: 600 16px 'Saira Condensed', sans-serif;
-            position: relative;
-           }
-       
-       
+.line-1 {
+    border-right: 1px solid #fff; /* Divider between two elements */
+    height: 18px; /* Adjust the height of the divider */
+    margin-right: 10px; /* Spacing between the elements and the divider */
+    padding-right: 10px; /* Spacing between the divider and the right element */
+}
+
+.col-md-6 .menu-item-2 li{
+    margin-left: 5px;
+}
+    
