@@ -18,7 +18,7 @@ use App\Http\Controllers\SermonController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome_Good');
 });
 
 Auth::routes();
