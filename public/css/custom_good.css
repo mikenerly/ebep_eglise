@@ -1,0 +1,90 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+body {
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a5555;
+}*/
+
+.top-navbar {
+    background-color: #333; /* Set your background color here */
+    color: #fff; /* Set text color */
+    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+.left-element .location {
+    /* Style the left corner content */
+    font-size: 10px;
+}
+
+.left-element .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px ;
+    margin: 0 10px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+.right-elements {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10px;
+}
+
+.element {
+    margin-left: 20px; /* Adjust the margin as needed */
+    /* Style for the right corner elements */
+}
+
+/*===================For the navbar===========================*/
+/* Style for the navigation bar */
+.navbar {
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set your text color */
+    padding: 15px 0; /* Adjust the padding as needed */
+}
+
+/* Style for the logo on the left */
+.navbar-brand {
+    margin-right: 20px; /* Adjust the margin as needed */
+    font-size: 24px; /* Set your desired font size */
+}
+
+/* Style for the menu items on the right */
+.navbar-nav {
+    margin-left: auto; /* Push the menu items to the right */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 0; /* Adjust the margin between menu items as needed */
+}
+
+/* Style for the links in the menu items */
+.navbar-nav .nav-item a {
+    color: rgb(32, 30, 30); /* Set your link text color */
+    font-weight: bold; /* Set your desired font weight */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for the menu items */
+.navbar-nav .nav-item a:hover {
+    color: #ffcc00; /* Set the hover color as desired */
+}
