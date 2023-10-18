@@ -17,29 +17,28 @@ body {
     background-color: #8a5555;
 }*/
 
-.top-navbar {
-    background-color: #333; /* Set your background color here */
+.top-bar {
+    background-color: #5c2525c7; /* Set your background color here */
     color: #fff; /* Set text color */
-    padding: 10px 0; /* Adjust the padding as needed */
+    padding: 7px 0 7px 0; /* Adjust the padding as needed */
 }
+
+/*
+.top-navbar {
+    background-color: #323c96; /* Set your background color here 
+    color: #fff; /* Set text color
+    padding: 10px 0; /* Adjust the padding as needed
+}
+*/
 
 .left-element .location {
     /* Style the left corner content */
     font-size: 10px;
 }
 
-.left-element .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    font-size: 18px;
-    height: 34px;
-    width: 34px;
-    border-radius: 50px ;
-    margin: 0 10px;
-    background-color: #4070f4;
-    text-decoration: none;
+.left-element i {
+    font-size: 25px;
+    margin-left: 0;
 }
 
 .right-elements {
@@ -49,23 +48,45 @@ body {
     font-size: 10px;
 }
 
+.right-elements .element {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #d1d1df;
+}
+
+.element:last-child {
+    border-right: none;
+}
+
 .element {
     margin-left: 20px; /* Adjust the margin as needed */
+    border-style: 15px;
     /* Style for the right corner elements */
 }
 
 /*===================For the navbar===========================*/
 /* Style for the navigation bar */
 .navbar {
-    background-color: #333; /* Set your desired background color */
+    background-color: #E0D095; /* Set your desired background color */
     color: #fff; /* Set your text color */
     padding: 15px 0; /* Adjust the padding as needed */
 }
 
 /* Style for the logo on the left */
 .navbar-brand {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
     margin-right: 20px; /* Adjust the margin as needed */
-    font-size: 24px; /* Set your desired font size */
+    /*font-size: 30px;  Set your desired font size */
+}
+
+.navbar-brand .ebep-name {
+    margin-left: 3px;
+    color: #805555;
+    font-size: 34px;
+    font-weight: bold;
 }
 
 /* Style for the menu items on the right */

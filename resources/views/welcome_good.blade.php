@@ -15,31 +15,32 @@
     
 </head>
 <body>
-    <header class="container-fluid top-navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="left-element">
-                            <a href="#" style="background: #4267b2" class="link">
-                                <i class='bx bxl-facebook'></i>
-                            </a>
-                            <span class="location">
-                                #569, Route de Delmas (entre Delmas 91 et 93), Delmas, Haiti
-                            </span>
-                        </div>
-                        <div class="right-elements">
-                            <div class="element">A Propos</div>
-                            <div class="element">Contactez Nous</div>
+    <header id="header-wraper">
+        <div class="top-bar gx-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="left-element">
+                                <i class='bx bxs-edit-location'></i>
+                                <span class="location">
+                                    #569, Route de Delmas (entre Delmas 91 et 93), Delmas, Haiti
+                                </span>
+                            </div>
+                            <div class="right-elements">
+                                <div class="element">A Propos</div>
+                                <div class="element">Contactez Nous</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="your-logo.png" alt="Your Logo" width="50">
+                    <img src="{{ asset('images/Ebep_Eglise_Logo.svg') }}" alt="EBEP" width="80">
+                    <span class="ebep-name">EBEP</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
