@@ -20,7 +20,7 @@ body {
 .top-bar {
     background-color: #5c2525c7; /* Set your background color here */
     color: #fff; /* Set text color */
-    padding: 7px 0 7px 0; /* Adjust the padding as needed */
+    padding: 11.5px 0; /* Adjust the padding as needed */
 }
 
 /*
@@ -39,6 +39,12 @@ body {
 .left-element i {
     font-size: 25px;
     margin-left: 0;
+}
+
+.left-element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .right-elements {
@@ -108,4 +114,65 @@ body {
 /* Hover effect for the menu items */
 .navbar-nav .nav-item a:hover {
     color: #ffcc00; /* Set the hover color as desired */
+}
+
+/*====================Hero section within main===============*/
+
+.hero {
+    /*background: url('your-background-image.jpg') center/cover no-repeat; /* Set your background image */
+    /*height: 400px; /* Set the desired height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    /*background: rgba(0, 0, 0, 0.5);  Background overlay */
+    color: rgb(252, 250, 250); /* Text color */
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-logo {
+    flex: 1;
+    max-width: 150px; /* Set your desired logo size */
+}
+
+.hero-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+/* for first content*/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    border-style: none;
+}
+
+.card-item {
+    font-size: 14px; /* Set your desired font size */
+    margin: 20px; /* Adjust the margin as needed */
+}
+
+.card-item i {
+    font-size: 78px; /* Set your desired icon size */
+    margin: 10px 0;
+}
+
+.card-item p {
+    margin-top: 30px;
 }

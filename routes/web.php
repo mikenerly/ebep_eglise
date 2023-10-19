@@ -18,11 +18,7 @@ use App\Http\Controllers\SermonController;
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
-    return view('welcome_Good');
-=======
     return view('welcome_good');
->>>>>>> 1375354a07e886473cd481e629d4a1faf7c6d95a
 });
 
 Auth::routes();

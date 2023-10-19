@@ -16,7 +16,7 @@
 </head>
 <body>
     <header id="header-wraper">
-        <div class="top-bar gx-4">
+        <div class="top-bar">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -65,6 +65,44 @@
         </nav>
     </header>
     <main>
+        <section class="hero" style="background: url('{{ asset('images/banner.png') }}') center/cover no-repeat; height: 400px;">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="{{ asset('images/EBEP_Famille_icon.jpg') }}" alt="Logo" width="180">
+                </div>
+                <div class="hero-text">
+                    <h1>Bienvenue à</br>Église</br>Baptiste</br>Évangélique de</br>Pétion-Ville</h1>
+                </div>
+            </div>
+        </section>
+        <section class="content-first">
+            <div class="container">
+                <div class="row content-first-items">
+                    <div class="col-md-4 card">
+                        <div class="card-item">
+                            <i class='bx bx-history'></i>
+                            <h2>NOTRE HISTOIRE</h2>
+                            <p class="content-histoire">Pour comprendre qui nous sommes et où nous allons, vous devez comprendre où nous avons commencé.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <div class="card-item">
+                            <i class='bx bx-home-circle'></i>
+                            <h2>NOS MINISTERES</h2>
+                            <p>Apprenez ce qui contribue à constituer le corps du Christ. Nous prêchons à travers nos ministères pour glorifier les dons du Seigneur.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <div class="card-item">
+                            <i class='bx bxs-contact'></i>
+                            <h2>CONTACT NOUS</h2>
+                            <p>Email: eglisebaptiste2017@gmail.com</br> Location: #569, Route de Delmas ( entre Delmas 91 et 93), Delmas, Haiti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
         <h2>Gutter</h2>
         <div class="container px-4">
             <div class="row gx-5">
@@ -87,7 +125,7 @@
                 <div class="col-6">4
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <footer>
 
