@@ -119,8 +119,8 @@ body {
 /*====================Hero section within main===============*/
 
 .hero {
-    /*background: url('your-background-image.jpg') center/cover no-repeat; /* Set your background image */
-    /*height: 400px; /* Set the desired height */
+    /*background: url('your-background-image.jpg') center/cover no-repeat; / Set your background image */
+    /*height: 400px; / Set the desired height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,4 +175,25 @@ body {
 
 .card-item p {
     margin-top: 30px;
+}
+
+/*Gallery Section*/
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+    
+}
+
+.gallery-item img {
+    width: 250px;
+    margin-left: 2px;
+}
+
+.section-title-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
