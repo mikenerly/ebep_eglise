@@ -8,19 +8,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*
+
 body {
-    height: 300vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #8a5555;
-}*/
+    height: 800vh;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #ece4e4b4;
+}
 
 .top-bar {
+    display: flex;
     background-color: #5c2525c7; /* Set your background color here */
     color: #fff; /* Set text color */
     padding: 11.5px 0; /* Adjust the padding as needed */
+    flex-wrap: wrap;
 }
 
 /*
@@ -45,6 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex: 1;
 }
 
 .right-elements {
@@ -52,6 +55,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     font-size: 10px;
+    flex: 1;
 }
 
 .right-elements .element {
@@ -184,12 +188,28 @@ body {
     justify-content: center;
     margin-top: 10px;
     padding: 0;
+    /*width: 33.33%;*/
+    /*float: left;*/
     
 }
 
+.gallery-row-1 .gallery-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-row-2 .gallery-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .gallery-item img {
-    width: 250px;
-    margin-left: 2px;
+    width: 100%;
+    /* max-width: 100%; */
+    /* height: auto; */
+    /*margin-left: 2px;*/
 }
 
 .section-title-main {
