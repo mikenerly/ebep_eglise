@@ -16,6 +16,26 @@
 </head>
 <body>
     <header id="header-wraper">
+        <!-- <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="left-element">
+                                <i class='bx bxs-edit-location'></i>
+                                <span class="location">
+                                    #569, Route de Delmas (entre Delmas 91 et 93), Delmas, Haiti
+                                </span>
+                            </div>
+                            <div class="right-elements">
+                                <div class="element">A Propos</div>
+                                <div class="element">Contactez Nous</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <div class="top-bar">
             <div class="container">
                 <div class="row">
@@ -121,7 +141,7 @@
                 <span class="section-title-main">Gallerie</span>
                 <b></b>
             </h2>
-            <div class="row gallery">
+            <div class="row gallery-row-1">
                 <div class="col-md-3 gallery-item">
                     <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="photo">
                 </div>
@@ -135,7 +155,7 @@
                     <img src="{{ asset('images/gallery/Photo6.jpg') }}" alt="photo">
                 </div>
             </div>
-            <div class="row">
+            <div class="row gallery-row-2">
                 <div class="col-md-3 gallery-item">
                     <img src="{{ asset('images/gallery/Photo4.jpg') }}" alt="photo">
                 </div>
