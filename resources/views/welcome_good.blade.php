@@ -7,7 +7,7 @@
     <title>Eglise Baptiste de Petion-Ville</title>
 
     <!--CSS link local -->
-        <link rel="stylesheet" href="{{ asset('css/customNew.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/custom_good.css') }}">
     <!--Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap -->
