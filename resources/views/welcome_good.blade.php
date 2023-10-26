@@ -15,7 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 <body>
-<<<<<<< HEAD
     <header id="header-wraper">
         <div class="top-bar">
             <div class="container">
@@ -35,14 +34,12 @@
                         </div>
                     </div>
                 </div>
-=======
     <div class="container">
         <div class="row top-wrapper">
             <div class="header-top-1 col-6">
                 <ul class="top-menu-list">  
                     <li class="menu-item-1">#569, Route de Delmas ( entre Delmas 91 et 93), Delmas, Haiti</li>
                 </ul>
->>>>>>> c3b12a9 (one stage)
             </div>
             <div class="header-top-2 col-6">
                 <ul class="top-menu-list">  
@@ -51,7 +48,6 @@
                 </ul>
             </div> 
         </div>
-<<<<<<< HEAD
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -184,8 +180,6 @@
     <footer>
 
     </footer>-->
-=======
     </div>
->>>>>>> c3b12a9 (one stage)
 </body>
 </html>
