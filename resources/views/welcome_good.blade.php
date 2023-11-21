@@ -37,25 +37,29 @@
                 </div>
             </div> -->
             <div class="top-bar">
-                <div class="container">
+                <div class="container-fluid col-md-6 text-white p-1">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="left-element">
-                                    <i class='bx bxs-edit-location'></i>
-                                    <span class="location">
-                                        #569, Route de Delmas (entre Delmas 91 et 93), Delmas, Haiti
-                                    </span>
-                                </div>
-                                <div class="right-elements">
-                                    <div class="element">A Propos</div>
-                                    <div class="element">Contactez Nous</div>
-                                </div>
-                            </div>
+                        <!-- Location -->
+                        <div class="col-md-4 mb-2 mb-md-0 text-center">
+                            <i class="bx bx-map"></i>
+                            <span class=""> #569, Route de Delmas, Delmas, Haiti</span>
+                        </div>
+                
+                        <!-- Phone -->
+                        <div class="col-md-4 mb-2 mb-md-0 text-center">
+                            <i class="bx bx-phone"></i>
+                            <span class=""> +509 22 22 2452</span>
+                        </div>
+                
+                        <!-- Email -->
+                        <div class="col-md-4 text-center">
+                            <i class="bx bx-envelope"></i>
+                            <span class=""> eglisebaptiste2017@gmail.com</span>
                         </div>
                     </div>
-                </div>
+                </div>                   
             </div>
+            
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -132,13 +136,13 @@
                             <path d="M12.93 5h1.57a.5.5 0 01.5.5v9a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-1.57a6.953 6.953 0 01-1-.22v1.79A1.5 1.5 0 005.5 16h9a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 4h-1.79c.097.324.17.658.22 1z"></path>
                             </svg>
                         </div>
-                        <h2 class="display-5 mb-3 fw-semibold lh-sm">Personalize it with Bootstrap&nbsp;Icons</h2>
+                        <h2 class="display-5 mb-3 fw-semibold lh-sm">Nos cultes du Dimanche</h2>
                         <p class="lead fw-normal">
-                            <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> is an open source SVG icon library featuring over 1,800 glyphs, with more added every release. They're designed to work in any project, whether you use Bootstrap itself or not. Use them as SVGs or icon fonts—both options give you vector scaling and easy customization via CSS.
+                            Les dimanches matins sont empreints de sérénité et de réflexion au sein de notre communauté. Chaque semaine, nous nous réunissons pour célébrer nos cultes du Dimanche Matin, des moments précieux où la spiritualité et la communion se rencontrent.
                         </p>
                         <p class="d-flex justify-content-start lead fw-normal mb-md-0">
-                            <a href="https://icons.getbootstrap.com/" class="icon-link icon-link-hover fw-semibold">
-                            Get Bootstrap Icons
+                            <a href="#" class="icon-link icon-link-hover fw-semibold">
+                            Lire plus...
                             <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
                             </a>
                         </p>
@@ -149,25 +153,26 @@
                 </section>
                 <section class="row g-3 g-md-5 pb-md-5 mb-5 align-items-center">
                     <div class="col-lg-6">
+                        <img class="img-fluid mt-3 mx-auto" src="{{ asset('images/gallery/Photo3.jpg') }}" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
                         <div class="masthead-followup-icon d-inline-block mb-3" style="--bg-rgb: var(--bd-violet-rgb);">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" focusable="false" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 16a6 6 0 006-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 006 6zM6.646 4.646c-.376.377-1.272 1.489-2.093 3.13l.894.448c.78-1.559 1.616-2.58 1.907-2.87l-.708-.708z" clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <h2 class="display-5 mb-3 fw-semibold lh-sm">Make it yours with official Bootstrap Themes</h2>
+                        <h2 class="display-5 mb-3 fw-semibold lh-sm">Debut de nos activites pour le 40eme Anniversaire</h2>
                         <p class="lead fw-normal">
-                            Take Bootstrap to the next level with premium themes from the <a href="https://themes.getbootstrap.com/">official Bootstrap Themes marketplace</a>. Themes are built on Bootstrap as their own extended frameworks, rich with new components and plugins, documentation, and powerful build tools.
+                            Le coup d'envoi des festivités pour notre 40e anniversaire approche à grands pas, et l'excitation est palpable dans l'air ! Les préparatifs battent leur plein pour marquer cette étape exceptionnelle de notre parcours. Nous entamons ce voyage commémoratif avec un élan d'enthousiasme, prêts à célébrer quatre décennies de succès, de croissance et de moments mémorables.
                         </p>
                         <p class="d-flex justify-content-start lead fw-normal mb-md-0">
-                            <a href="https://themes.getbootstrap.com/" class="icon-link icon-link-hover fw-semibold">
-                            Browse Bootstrap Themes
+                            <a href="#" class="icon-link icon-link-hover fw-semibold">
+                            Lire plus..
                             <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
                             </a>
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid mt-3 mx-auto" src="{{ asset('images/gallery/Photo3.jpg') }}" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                    </div>
+                    
                 </section>
             </div>
             <!--section pour gallerie-->
@@ -236,37 +241,37 @@
         <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
             <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
                 <div class="row">
-                    <div class="col-lg-3 mb-3">
-                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
-                        <img src="{{ asset('images/Ebep_Eglise_Logo.svg') }}" alt="EBEP" width="80">
-                        <!--<span class="ebep-name">EBEP</span>-->
-                    </a>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2">Designed and built with all the love in the world by the Bootstrap team with the help of our contributors. </li>
-                    </ul>
+                    <div class="col-md-3 mb-3">
+                        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                            <img src="{{ asset('images/Ebep_Eglise_Logo.svg') }}" alt="EBEP" width="80">
+                            <!--<span class="ebep-name">EBEP</span>-->
+                        </a>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2">Designed and built with all the love in the world by the Bootstrap team with the help of our contributors. </li>
+                        </ul>
                     </div>
-                    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <div class="col-md-3 offset-lg-1 mb-3">
                         <h5>Media Liens</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="/">Sermons</a></li>
-                            <li class="mb-2"><a href="/docs/5.3/">Livestream & Video</a></li>
-                            <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
+                            <li class="mb-2"><a href="#">Sermons</a></li>
+                            <li class="mb-2"><a href="#">Livestream & Video</a></li>
+                            <li class="mb-2"><a href="#">Examples</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-lg-2 mb-3">
+                    <div class="col-md-3 mb-3">
                         <h5>Guides</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="/docs/5.3/getting-started/">L'heure services</a></li>
-                            <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Devenir Membre</a></li>
-                            <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Visiter nous</a></li>
+                            <li class="mb-2"><a href="#">L'heure services</a></li>
+                            <li class="mb-2"><a href="#">Devenir Membre</a></li>
+                            <li class="mb-2"><a href="#">Visiter nous</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-lg-2 mb-3">
+                    <div class="col-md-2 mb-3">
                         <h5>Nos Projects</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener">Faire un Don</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank" rel="noopener">Projects en cours</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">CED</a></li>
+                            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Faire un Don</a></li>
+                            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Projects en cours</a></li>
+                            <li class="mb-2"><a href="#" target="_blank" rel="noopener">CED</a></li>
                         </ul>
                     </div>
                 </div>
