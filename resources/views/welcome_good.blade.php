@@ -5,9 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eglise Evangelique Baptiste de Petion-Ville</title>
-        <!-- Bootstrap CSS -->
+        <!--Add bootstrap CDM-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!--Import bootstrapp cdn icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <!-- Include leaflet Library -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <!-- Bootstrap CSS 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        -->
         <!--CSS external-->
         <link rel="stylesheet" href="{{ asset('css/custom_good.css') }}"> 
         <!--Boxicom css-->
@@ -16,61 +24,49 @@
     </head>
     <body>
         <header id="header-wraper">
-            <!-- <div class="top-bar">
+            <nav class="top-bar">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="left-element">
-                                    <i class='bx bxs-edit-location'></i>
-                                    <span class="location">
-                                        #569, Route de Delmas (entre Delmas 91 et 93), Delmas, Haiti
-                                    </span>
-                                </div>
-                                <div class="right-elements">
-                                    <div class="element">A Propos</div>
-                                    <div class="element">Contactez Nous</div>
-                                </div>
+                    <div class="row justify-content-center justify-content-sm-between align-items-center gy-2">
+                        <div class="col-auto text-center text-sm-start mb-2 mb-sm-0">
+                            <p class="text-light mb-0 d-inline-block">
+                                <a href="https://www.google.com/maps/dir/%C3%89glise+Baptiste+%C3%89
+                                vangelique+de+Petion-Ville,+Rte+de+Delmas+%23+425,+Delmas+95/%C3%89gli
+                                se+Baptiste+%C3%89vangelique+de+Petion-Ville,+Rte+de+Delmas+%23+425,
+                                +Delmas+95/@18.5232687,-72.3255594,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1
+                                !1s0x8eb9e87ff9efb3af:0x340013f252029fd4!2m2!1d-72.2842851!2d18.523129
+                                8!1m5!1m1!1s0x8eb9e87ff9efb3af:0x340013f252029fd4!2m2!1d-72.2842851!2d
+                                18.5231298?hl=fr-FR&entry=ttu"><i class="bx bx-map text-light mx-1"></i>
+                                #569, Route de Delmas, Delmas, Haiti
+                                </a>
+                            </p>
+                            <p class="text-light mb-0 d-inline-block">
+                                <i class="bx bx-phone text-light mx-1"></i>
+                                <span>+509 3200-5660</span>
+                            </p>
+                        </div>
+                        <div class="col-auto text-center text-sm-start">
+                            <div class="social-links">
+                                <a href="#" class="text-light mx-1"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light mx-1"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light mx-1"><i class="bi bi-youtube"></i></a>
+                                <a href="#" class="text-light mx-1"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div>                
                 </div>
-            </div> -->
-            <div class="top-bar">
-                <div class="container-fluid col-md-6 text-white p-1">
-                    <div class="row">
-                        <!-- Location -->
-                        <div class="col-md-4 mb-2 mb-md-0 text-center">
-                            <i class="bx bx-map"></i>
-                            <span class=""> #569, Route de Delmas, Delmas, Haiti</span>
-                        </div>
-                
-                        <!-- Phone -->
-                        <div class="col-md-4 mb-2 mb-md-0 text-center">
-                            <i class="bx bx-phone"></i>
-                            <span class=""> +509 22 22 2452</span>
-                        </div>
-                
-                        <!-- Email -->
-                        <div class="col-md-4 text-center">
-                            <i class="bx bx-envelope"></i>
-                            <span class=""> eglisebaptiste2017@gmail.com</span>
-                        </div>
-                    </div>
-                </div>                   
-            </div>
-            
-            <nav class="navbar navbar-expand-lg navbar-light">
+            </nav>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light p-5">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="{{ asset('images/Ebep_Eglise_Logo.svg') }}" alt="EBEP" width="80">
                         <span class="ebep-name">EBEP</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">HOME</a>
                             </li>
@@ -102,143 +98,284 @@
             <section class="content-first">
                 <div class="container">
                     <div class="row content-first-items">
-                        <div class="col-md-4 card">
-                            <div class="card-item">
-                                <i class='bx bx-history'></i>
-                                <h3 class="mb-3">NOTRE HISTOIRE</h3>
-                                <p class="content-histoire">Pour comprendre qui nous sommes et où nous allons, vous devez comprendre où nous avons commencé.</p>
+                        <div class="col-md">
+                            <div class="card bg-dark text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class='bx bx-history'></i>
+                                    </div>
+                                    <h3 class="card-title mb-3">
+                                        NOTRE HISTOIRE
+                                    </h3>
+                                    <p class="card-text">
+                                        Pour comprendre qui nous sommes et où nous allons, vous devez comprendre où nous avons commencé...
+                                    </p>
+                                    <a href="#" class="btn btn-light mt-3">
+                                        <i class="bi bi-chevron-right"></i> Lire plus
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 card">
-                            <div class="card-item">
-                                <i class='bx bx-home-circle'></i>
-                                <h3 class="mb-3">NOS MINISTERES</h3>
-                                <p>Apprenez ce qui contribue à constituer le corps du Christ. Nous prêchons à travers nos ministères pour glorifier les dons du Seigneur.</p>
+                        <div class="col-md">
+                            <div class="card bg-dark text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class='bx bx-home-circle'></i>
+                                    </div>
+                                    <h3 class="card-title mb-3">
+                                        NOTRE MISSION
+                                    </h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex natus placeat debitis reprehenderit accusantium minus!
+                                    </p>
+                                    <a href="#" class="btn btn-light mt-3">
+                                        <i class="bi bi-chevron-right"></i> Lire plus
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 card">
-                            <div class="card-item">
-                                <i class='bx bxs-contact'></i>
-                                <h3 class="mb-3">CONTACT NOUS</h3>
-                                <p>Email: eglisebaptiste2017@gmail.com</br> Telephone: 509 22 22 2452</p>
+                        <div class="col-md">
+                            <div class="card bg-dark text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class="bi bi-people"></i>
+                                    </div>
+                                    <h3 class="card-title mb-3">
+                                        NOTRE VISION
+                                    </h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis deleniti unde in, corporis sunt minus...
+                                    </p>
+                                    <a href="#" class="btn btn-light mt-3">
+                                        <i class="bi bi-chevron-right"></i> Lire plus
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!--Other section -->
-            <div class="container-xxl bd-gutter masthead-followup">
-                <section class="row g-3 g-md-5 pb-md-5 mb-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="masthead-followup-icon d-inline-block mb-3" style="--bg-rgb: var(--bd-teal-rgb);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" focusable="false" viewBox="0 0 16 16">
-                            <path d="M0 6a6 6 0 1112 0A6 6 0 010 6z"></path>
-                            <path d="M12.93 5h1.57a.5.5 0 01.5.5v9a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-1.57a6.953 6.953 0 01-1-.22v1.79A1.5 1.5 0 005.5 16h9a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 4h-1.79c.097.324.17.658.22 1z"></path>
-                            </svg>
+                <section id="learn" class="p-5">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-md">
+                                <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md p-5">
+                                <h2>Nos cultes du Dimanche</h2>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, provident? Ipsum pariatur blanditiis earum. Debitis!
+                                </p>
+                                <p>
+                                    Les dimanches matins sont empreints de sérénité et de réflexion au sein de notre communauté. Chaque semaine, nous nous réunissons pour célébrer nos cultes du Dimanche Matin, des moments précieux où la spiritualité et la communion se rencontrent.
+                                </p>
+                                <a href="#" class="btn btn-light mt-3">
+                                    <i class="bi bi-chevron-right"></i> Lire plus
+                                </a>
+                            </div>  
                         </div>
-                        <h2 class="display-5 mb-3 fw-semibold lh-sm">Nos cultes du Dimanche</h2>
-                        <p class="lead fw-normal">
-                            Les dimanches matins sont empreints de sérénité et de réflexion au sein de notre communauté. Chaque semaine, nous nous réunissons pour célébrer nos cultes du Dimanche Matin, des moments précieux où la spiritualité et la communion se rencontrent.
-                        </p>
-                        <p class="d-flex justify-content-start lead fw-normal mb-md-0">
-                            <a href="#" class="icon-link icon-link-hover fw-semibold">
-                            Lire plus...
-                            <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid mt-3 mx-auto" src="{{ asset('images/gallery/Photo1.jpg') }}" alt="Bootstrap Icons" width="700" height="425" loading="lazy">
                     </div>
                 </section>
-                <section class="row g-3 g-md-5 pb-md-5 mb-5 align-items-center">
-                    <div class="col-lg-6">
-                        <img class="img-fluid mt-3 mx-auto" src="{{ asset('images/gallery/Photo3.jpg') }}" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                <section class="p-5 bg-dark text-light">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-md p-5">
+                                <h2>EBEP en Fete</h2>
+                                <p class="lead">
+                                    Debut de nos activites pour le 40eme Anniversaire
+                                </p>
+                                <p>
+                                    Le coup d'envoi des festivités pour notre 40e anniversaire approche à grands pas, et l'excitation est palpable dans l'air ! Les préparatifs battent leur plein pour marquer cette étape exceptionnelle de notre parcours. Nous entamons ce voyage commémoratif avec un élan d'enthousiasme, prêts à célébrer quatre décennies de succès, de croissance et de moments mémorables.
+                                </p>
+                                <a href="#" class="btn btn-light mt-3">
+                                    <i class="bi bi-chevron-right"></i> Lire Plus
+                                </a>
+                            </div>
+                            <div class="col-md">
+                                <img src="{{ asset('images/gallery/Photo3.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            
+                        </div>   
                     </div>
-                    <div class="col-lg-6">
-                        <div class="masthead-followup-icon d-inline-block mb-3" style="--bg-rgb: var(--bd-violet-rgb);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" focusable="false" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 16a6 6 0 006-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 006 6zM6.646 4.646c-.376.377-1.272 1.489-2.093 3.13l.894.448c.78-1.559 1.616-2.58 1.907-2.87l-.708-.708z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <h2 class="display-5 mb-3 fw-semibold lh-sm">Debut de nos activites pour le 40eme Anniversaire</h2>
-                        <p class="lead fw-normal">
-                            Le coup d'envoi des festivités pour notre 40e anniversaire approche à grands pas, et l'excitation est palpable dans l'air ! Les préparatifs battent leur plein pour marquer cette étape exceptionnelle de notre parcours. Nous entamons ce voyage commémoratif avec un élan d'enthousiasme, prêts à célébrer quatre décennies de succès, de croissance et de moments mémorables.
-                        </p>
-                        <p class="d-flex justify-content-start lead fw-normal mb-md-0">
-                            <a href="#" class="icon-link icon-link-hover fw-semibold">
-                            Lire plus..
-                            <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
-                            </a>
-                        </p>
-                    </div>
-                    
                 </section>
-            </div>
+            <!--our board-->
+            <section id="instructors" class="p-5 bg-secondary">
+                <div class="container">
+                    <h2 class="text-center text-white">Nos Leaders</h2>
+                    <p class="lead text-center text-white mb-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, recusandae.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <!-- Explanation
+                                col-md-6=> on medium screen it takes 2 column
+                                col-lg-3=> on large screen it will take 3 column out of 12
+                            -->
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img 
+                                        src="https://randomuser.me/api/portraits/men/16.jpg" 
+                                        class="rounded-circle mb-3"
+                                        alt=""
+                                    >
+                                    <h3 class="card-title mb-3">Past. John Doe</h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus fugiat delectus ipsam libero nisi?
+                                    </p>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <!-- Explanation
+                                col-md-6=> on medium screen it takes 2 column
+                                col-lg-3=> on large screen it will take 3 column out of 12
+                            -->
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img 
+                                        src="https://randomuser.me/api/portraits/women/12.jpg" 
+                                        class="rounded-circle mb-3"
+                                        alt=""
+                                    >
+                                    <h3 class="card-title mb-3">Sr. Johane Innocent</h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus fugiat delectus ipsam libero nisi?
+                                    </p>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <!-- Explanation
+                                col-md-6=> on medium screen it takes 2 column
+                                col-lg-3=> on large screen it will take 3 column out of 12
+                            -->
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img 
+                                        src="https://randomuser.me/api/portraits/men/17.jpg" 
+                                        class="rounded-circle mb-3"
+                                        alt=""
+                                    >
+                                    <h3 class="card-title mb-3">Past. Mike Jr. Andrew</h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus fugiat delectus ipsam libero nisi?
+                                    </p>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <!-- Explanation
+                                col-md-6=> on medium screen it takes 2 column
+                                col-lg-3=> on large screen it will take 3 column out of 12
+                            -->
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img 
+                                        src="https://randomuser.me/api/portraits/women/21.jpg" 
+                                        class="rounded-circle mb-3"
+                                        alt=""
+                                    >
+                                    <h3 class="card-title mb-3">Sr. Mykirah Grace</h3>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus fugiat delectus ipsam libero nisi?
+                                    </p>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
             <!--section pour gallerie-->
-            <div class="container section-gallerie-container">
-                <h2 class="section-title">
-                    <b></b>
-                    <span class="section-title-main">Gallerie</span>
-                    <b></b>
-                </h2>
-                <div class="row gallery-row-1">
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="photo">
+            <section class="p-5 bg-dark">
+                <div class="container section-gallerie-container">
+                    <h2 class="section-title">
+                        <b></b>
+                        <span class="section-title-main">Gallerie</span>
+                        <b></b>
+                    </h2>
+                    <div class="row gallery-row-1">
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="photo">
+                        </div>
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo2.jpg') }}" alt="photo">
+                        </div>
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo3.jpg') }}" alt="photo">
+                        </div>
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo6.jpg') }}" alt="photo">
+                        </div>
                     </div>
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo2.jpg') }}" alt="photo">
+                    <div class="row gallery-row-2">
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo4.jpg') }}" alt="photo">
+                        </div>
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo5.jpg') }}" alt="photo">
+                        </div>
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo6.jpg') }}" alt="photo">
+                        </div>
+                        <div class="col-md-3 gallery-item">
+                            <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="photo">
+                        </div>
                     </div>
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo3.jpg') }}" alt="photo">
-                    </div>
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo6.jpg') }}" alt="photo">
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Voir plus
+                    </a>
+                </div>
+            </section>
+            <!-- Contact & Map-->
+            <section class="p-5 bg-secondary">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md">
+                            <h2 class="text-center mb-4">Contact Info</h2>
+                            <ul class="list-group list-group-flush lead">
+                                <li class="list-group-item">
+                                    <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="fw-bold">Enrollment Phone:</span> 509 33517873
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="fw-bold">Student Phone:</span> 509 33517873
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="fw-bold">Enrollment Email:</span> enroll@frontendbc.test
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="fw-bold">Student Email:</span> stu@frontendbc.test
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <!-- For adding the Map -->
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="row gallery-row-2">
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo4.jpg') }}" alt="photo">
-                    </div>
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo5.jpg') }}" alt="photo">
-                    </div>
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo6.jpg') }}" alt="photo">
-                    </div>
-                    <div class="col-md-3 gallery-item">
-                        <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="photo">
-                    </div>
-                </div>
-            </div>
-
-
-            <!--
-            <h2>Gutter</h2>
-            <div class="container px-4">
-                <div class="row gx-5">
-                    <div class="col">
-                        <div class="p-4 border">Custom column padding</div>
-                    </div>
-                    <div class="col">
-                        <div class="p-3 border">Custom column padding</div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row gy-2">
-                    <div class="col-6">1
-                    </div>
-                    <div class="col-6">2
-                    </div>
-                    <div class="col-6">3
-                    </div>
-                    <div class="col-6">4
-                    </div>
-                </div>
-            </div> -->
+            </section>
         </main>
-        <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+        <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary position-relative">
             <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
                 <div class="row">
                     <div class="col-md-3 mb-3">
@@ -282,8 +419,27 @@
                         <li class="ms-3"><a class="link-dark" href="#"><i class='bx bxl-instagram'></i></a></li>
                         <li class="ms-3"><a class="link-dark" href="#"><i class='bx bxl-twitter' ></i></a></li>
                     </ul>
+                    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                        <i class="bi bi-arrow-up-circle h1"></i>
+                    </a>
                 </div>
             </div>
         </footer>
+        <!--Javascript code for map-->
+        <script>
+            var latitude = 18.5231068; 
+            var longitude = -72.2845019;
+        
+            var map = L.map('map').setView([latitude, longitude], 13);
+        
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+        
+            L.marker([latitude, longitude]).addTo(map)
+              .bindPopup('EBEP').openPopup();
+        </script>
+        <!--add javascript bundle(prior to version 4, we don't need to include jquery)-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
