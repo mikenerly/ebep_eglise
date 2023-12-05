@@ -56,10 +56,10 @@
                 </div>
             </nav>
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-light p-5">
+            <nav class="navbar navbar-expand-lg navbar-light p-2">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="{{ asset('images/Ebep_Eglise_Logo.svg') }}" alt="EBEP" width="80">
+                        <img src="{{ asset('images/Ebep_Eglise_Logo.svg') }}" class="" alt="EBEP" width="80">
                         <span class="ebep-name">EBEP</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -95,11 +95,11 @@
                     </div>
                 </div>
             </section>
-            <section class="content-first">
+            <section class="content-first pt-5">
                 <div class="container">
                     <div class="row content-first-items">
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card text-dark">
                                 <div class="card-body text-center">
                                     <div class="h1 mb-3">
                                         <i class='bx bx-history'></i>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card text-dark">
                                 <div class="card-body text-center">
                                     <div class="h1 mb-3">
                                         <i class='bx bx-home-circle'></i>
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card text-dark">
                                 <div class="card-body text-center">
                                     <div class="h1 mb-3">
                                         <i class="bi bi-people"></i>
@@ -156,54 +156,54 @@
                 </div>
             </section>
             <!--Other section -->
-                <section id="learn" class="p-5">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-md">
-                                <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md p-5">
-                                <h2>Nos cultes du Dimanche</h2>
-                                <p class="lead">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, provident? Ipsum pariatur blanditiis earum. Debitis!
-                                </p>
-                                <p>
-                                    Les dimanches matins sont empreints de sérénité et de réflexion au sein de notre communauté. Chaque semaine, nous nous réunissons pour célébrer nos cultes du Dimanche Matin, des moments précieux où la spiritualité et la communion se rencontrent.
-                                </p>
-                                <a href="#" class="btn btn-light mt-3">
-                                    <i class="bi bi-chevron-right"></i> Lire plus
-                                </a>
-                            </div>  
-                        </div>
-                    </div>
-                </section>
-                <section class="p-5 bg-dark text-light">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-md p-5">
-                                <h2>EBEP en Fete</h2>
-                                <p class="lead">
-                                    Debut de nos activites pour le 40eme Anniversaire
-                                </p>
-                                <p>
-                                    Le coup d'envoi des festivités pour notre 40e anniversaire approche à grands pas, et l'excitation est palpable dans l'air ! Les préparatifs battent leur plein pour marquer cette étape exceptionnelle de notre parcours. Nous entamons ce voyage commémoratif avec un élan d'enthousiasme, prêts à célébrer quatre décennies de succès, de croissance et de moments mémorables.
-                                </p>
-                                <a href="#" class="btn btn-light mt-3">
-                                    <i class="bi bi-chevron-right"></i> Lire Plus
-                                </a>
-                            </div>
-                            <div class="col-md">
-                                <img src="{{ asset('images/gallery/Photo3.jpg') }}" alt="" class="img-fluid">
-                            </div>
-                            
-                        </div>   
-                    </div>
-                </section>
-            <!--our board-->
-            <section id="instructors" class="p-5 bg-secondary">
+            <section id="learn" class="pt-3">
                 <div class="container">
-                    <h2 class="text-center text-white">Nos Leaders</h2>
-                    <p class="lead text-center text-white mb-5">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md">
+                            <img src="{{ asset('images/gallery/Photo1.jpg') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md p-5">
+                            <h2>Nos cultes du Dimanche</h2>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, provident? Ipsum pariatur blanditiis earum. Debitis!
+                            </p>
+                            <p>
+                                Les dimanches matins sont empreints de sérénité et de réflexion au sein de notre communauté. Chaque semaine, nous nous réunissons pour célébrer nos cultes du Dimanche Matin, des moments précieux où la spiritualité et la communion se rencontrent.
+                            </p>
+                            <a href="#" class="btn btn-light mt-3">
+                                <i class="bi bi-chevron-right"></i> Lire plus
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            <section class="article-2 pt-4 text-dark">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md p-5">
+                            <h2>EBEP en Fete</h2>
+                            <p class="lead">
+                                Debut de nos activites pour le 40eme Anniversaire
+                            </p>
+                            <p>
+                                Le coup d'envoi des festivités pour notre 40e anniversaire approche à grands pas, et l'excitation est palpable dans l'air ! Les préparatifs battent leur plein pour marquer cette étape exceptionnelle de notre parcours. Nous entamons ce voyage commémoratif avec un élan d'enthousiasme, prêts à célébrer quatre décennies de succès, de croissance et de moments mémorables.
+                            </p>
+                            <a href="#" class="btn btn-light mt-3">
+                                <i class="bi bi-chevron-right"></i> Lire Plus
+                            </a>
+                        </div>
+                        <div class="col-md">
+                            <img src="{{ asset('images/gallery/Photo3.jpg') }}" alt="" class="img-fluid">
+                        </div>
+                        
+                    </div>   
+                </div>
+            </section>
+            <!--our board-->
+            <section id="instructors" class="p-5">
+                <div class="container">
+                    <h2 class="text-center text-dark">Nos Leaders</h2>
+                    <p class="lead text-center text-dark mb-5">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, recusandae.
                     </p>
                     <div class="row g-4">
@@ -212,7 +212,7 @@
                                 col-md-6=> on medium screen it takes 2 column
                                 col-lg-3=> on large screen it will take 3 column out of 12
                             -->
-                            <div class="card bg-light">
+                            <div class="card">
                                 <div class="card-body text-center">
                                     <img 
                                         src="https://randomuser.me/api/portraits/men/16.jpg" 
@@ -235,7 +235,7 @@
                                 col-md-6=> on medium screen it takes 2 column
                                 col-lg-3=> on large screen it will take 3 column out of 12
                             -->
-                            <div class="card bg-light">
+                            <div class="card">
                                 <div class="card-body text-center">
                                     <img 
                                         src="https://randomuser.me/api/portraits/women/12.jpg" 
@@ -258,7 +258,7 @@
                                 col-md-6=> on medium screen it takes 2 column
                                 col-lg-3=> on large screen it will take 3 column out of 12
                             -->
-                            <div class="card bg-light">
+                            <div class="card">
                                 <div class="card-body text-center">
                                     <img 
                                         src="https://randomuser.me/api/portraits/men/17.jpg" 
@@ -281,7 +281,7 @@
                                 col-md-6=> on medium screen it takes 2 column
                                 col-lg-3=> on large screen it will take 3 column out of 12
                             -->
-                            <div class="card bg-light">
+                            <div class="card">
                                 <div class="card-body text-center">
                                     <img 
                                         src="https://randomuser.me/api/portraits/women/21.jpg" 

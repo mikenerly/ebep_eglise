@@ -1,5 +1,5 @@
-/*Google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
+/*Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');*/
 
 * {
     margin: 0;
@@ -28,59 +28,10 @@ body {
     display: flex;
     background-color: #5c2525c7; /* Set your background color here */
     color: #fff; /* Set text color */
-    padding: 11.5px 0; /* Adjust the padding as needed */
+    padding: 5px 0; /* Adjust the padding as needed */
     flex-wrap: wrap;
 }
 
-/*
-.top-navbar {
-    background-color: #323c96; /* Set your background color here 
-    color: #fff; /* Set text color
-    padding: 10px 0; /* Adjust the padding as needed
-}
-*/
-
-.left-element .location {
-    /* Style the left corner content */
-    font-size: 10px;
-}
-
-.left-element i {
-    font-size: 25px;
-    margin-left: 0;
-}
-
-.left-element {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex: 1;
-}
-
-.right-elements {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 10px;
-    flex: 1;
-}
-
-.right-elements .element {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    border-right: 2px solid #d1d1df;
-}
-
-.element:last-child {
-    border-right: none;
-}
-
-.element {
-    margin-left: 20px; /* Adjust the margin as needed */
-    border-style: 15px;
-    /* Style for the right corner elements */
-}
 
 /*===================For the navbar===========================*/
 /* Style for the navigation bar */
@@ -165,13 +116,11 @@ body {
 }
 /* for first content*/
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10px;
-    border-style: none;
+    background: #E0D095;
+}
+
+.article-2 {
+    background: #E0D095;
 }
 
 .card-item {
